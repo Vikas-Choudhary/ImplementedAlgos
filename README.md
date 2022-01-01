@@ -1,2 +1,2 @@
 # ImplementedAlgos
-Algos implemented by me in competitive problems 
+Algos implemented
