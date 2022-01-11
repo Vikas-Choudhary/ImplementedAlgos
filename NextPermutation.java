@@ -1,11 +1,11 @@
 
 private static Comparable[] nextPermutation(final Comparable[] c){
   
-  //scanning from right to left, find the first element such that previous element is greater
+  //scanning from right to left, find the first element such that next element is greater
   int first = get1stelement( c );
   if(first==-1) return null; //no greater perm exists
   
-  //scan from left to right, get the first element such that its greater that first, swap first and the current element to increase index at first
+  //scan from right to left, get the first element such that its greater that first, swap first and the current element to increase index at first
   int second = c.length -1;
   while(c[second].compareTo(c[first])>=0)
     --second;
