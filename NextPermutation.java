@@ -15,8 +15,9 @@ private static Comparable[] nextPermutation(final Comparable[] c){
   //reverse the elements after first to set them in order that they are minimum(since they were at max earlier)
   second = c.length -1;
   while ( first < second )
-			swap( c, first++, second-- );
-	return c;
+	swap( c, first++, second-- );
+  return c;
+}
   
   private static int get1stelement( final Comparable[] c ) {
 		for ( int i = c.length - 2; i >= 0; --i )
